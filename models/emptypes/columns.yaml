@@ -1,0 +1,5 @@
+columns:
+    type:
+        label: 'rezalaal.tb::lang.tables.emptypes.type'
+        type: text
+        searchable: true

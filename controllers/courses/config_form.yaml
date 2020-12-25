@@ -1,0 +1,14 @@
+name: 'rezalaal.tb::lang.tables.courses.title'
+modelClass: Rezalaal\Tb\Models\Courses
+form: $/rezalaal/tb/models/courses/fields.yaml
+defaultRedirect: rezalaal/tb/courses
+create:
+    title: 'backend::lang.form.create'
+    redirect: 'rezalaal/tb/courses/update/:id'
+    redirectClose: rezalaal/tb/courses
+update:
+    title: 'backend::lang.relation.update'
+    redirect: rezalaal/tb/courses
+    redirectClose: rezalaal/tb/courses
+preview:
+    title: 'backend::lang.form.preview'

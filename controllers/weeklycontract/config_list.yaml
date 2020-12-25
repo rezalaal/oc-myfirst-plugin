@@ -1,0 +1,13 @@
+title: 'rezalaal.tb::lang.tables.weekly_contract.title'
+modelClass: Rezalaal\Tb\Models\WeeklyContract
+list: $/rezalaal/tb/models/weeklycontract/columns.yaml
+recordUrl: 'rezalaal/tb/weeklycontract/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+filter: config_filter.yaml
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

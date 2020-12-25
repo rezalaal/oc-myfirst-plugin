@@ -1,0 +1,26 @@
+scopes:
+  cities:
+    label: 'rezalaal.tb::lang.tables.cities.title'
+    modelClass: Rezalaal\TB\Models\Cities
+    conditions: cities_id = :filtered
+    nameFrom: name
+  years:
+    label: 'rezalaal.tb::lang.tables.years.title'
+    modelClass: Rezalaal\TB\Models\Years
+    conditions: years_id = :filtered
+    nameFrom: name
+  months:
+    label: 'rezalaal.tb::lang.tables.months.title'
+    modelClass: Rezalaal\TB\Models\Months
+    conditions: months_id = :filtered
+    nameFrom: name
+  courses:
+    label: 'rezalaal.tb::lang.tables.courses.title'
+    modelClass: Rezalaal\TB\Models\Courses
+    conditions: courses_id = :filtered
+    nameFrom: name
+  emptypes:
+    label: 'rezalaal.tb::lang.tables.emptypes.title'
+    modelClass: Rezalaal\TB\Models\EmpTypes
+    conditions: emptypes_id = :filtered
+    nameFrom: type

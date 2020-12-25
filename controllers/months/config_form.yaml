@@ -1,0 +1,14 @@
+name: 'rezalaal.tb::lang.tables.months.title'
+modelClass: Rezalaal\Tb\Models\Months
+form: $/rezalaal/tb/models/months/fields.yaml
+defaultRedirect: rezalaal/tb/months
+create:
+    title: 'backend::lang.form.create'
+    redirect: 'rezalaal/tb/months/update/:id'
+    redirectClose: rezalaal/tb/months
+update:
+    title: 'backend::lang.relation.update'
+    redirect: rezalaal/tb/months
+    redirectClose: rezalaal/tb/months
+preview:
+    title: 'backend::lang.form.preview'

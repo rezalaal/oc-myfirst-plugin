@@ -1,0 +1,5 @@
+columns:
+    name:
+        label: 'rezalaal.tb::lang.tables.genders.name'
+        type: text
+        searchable: true

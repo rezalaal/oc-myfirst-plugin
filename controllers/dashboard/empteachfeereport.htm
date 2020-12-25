@@ -1,0 +1,51 @@
+
+<form   
+    data-request="onGetempteachfeereport"
+    data-request-update="teachfeeresult: '#myDiv'"
+    class="form-elements" 
+    role="form"
+    >
+   <?= Form::token() ?>
+   <?= Form::sessionKey() ?> 
+<div class="form-group dropdown-field span-left">
+        <label><?= e(trans('rezalaal.tb::lang.tables.cities.title')) ?></label>
+        <select class="form-control custom-select" name="city">
+            <?php foreach($cities as $city) { ?>
+            <option selected="selected" value="<?= $city->id ?>"><?= $city->name ?></option>    
+            <?php } ?>
+        </select>
+</div>   
+<div class="form-group dropdown-field span-right">
+        <label><?= e(trans('rezalaal.tb::lang.tables.years.title')) ?></label>     
+        <select class="form-control custom-select" name="year">
+            <?php foreach($years as $year) { ?>
+            <option selected="selected" value="<?= $year->id ?>"><?= $year->name ?></option>    
+            <?php } ?>
+        </select>
+</div>      
+<div class="form-group dropdown-field span-left">
+        <label><?= e(trans('rezalaal.tb::lang.tables.months.title')) ?></label>  
+        <select class="form-control custom-select" name="month">
+            <?php foreach($months as $month) { ?>
+            <option selected="selected" value="<?= $month->id ?>"><?= $month->name ?></option>    
+            <?php } ?>
+        </select>
+</div>  
+<div class="form-group dropdown-field span-right">
+        <label><?= e(trans('rezalaal.tb::lang.tables.emptypes.title')) ?></label>  
+        <select class="form-control custom-select" name="emptype">
+            <?php foreach($emptypes as $emptype) { ?>
+            <option selected="selected" value="<?= $emptype->id ?>"><?= $emptype->type ?></option>    
+            <?php } ?>             
+        </select>
+</div>  
+<div class="form-group span-full">
+    <label><?= e(trans('rezalaal.tb::lang.report.empteach.comments')) ?></label>
+    <input type="text" name="comment" value="" class="form-control" />
+</div>  
+<div class="form-group span-left"> 
+    <button data-attach-loading type="submit" class="btn btn-primary btn-lg"><?= e(trans('backend::lang.form.apply')) ?></button>
+     
+</div>
+</form>
+<div id="myDiv"></div>

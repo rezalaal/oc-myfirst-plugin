@@ -1,0 +1,133 @@
+
+<div id='printarea' style="margin-top:0">
+<h4 class="text-center" style="margin-top:0">صورت عملکرد کلاس، دانش آموز و تراکم به نفر (دولتی) </h4>
+<h5 class="text-center">ماه {{ empteachfeereport.month }} ({{ empteachfeereport.emptypeName }} :: {{ empteachfeereport.city }}) - سال تحصیلی: {{ empteachfeereport.year }} </h5>
+<div class="container">
+    <table class="table table-bordered" style="direction:rtl;font-size:12px;border:2px solid;width:70%;height:50%;margin-left:auto;margin-right:auto;">
+        <thead style="border:2px solid">
+            <tr style="border:1px solid">
+                <th class="text-center" rowspan="2" colspan="2" style="line-height: 0;">دوره</th>
+                <th class="text-center" colspan="3" style="line-height: 0;">نسبت دانش آموز به گروه معلم</th>                 
+            </tr>
+            <tr style="border:1px solid">                 
+                <th class="text-center" style="line-height: 0;">قرارداد</th>
+                <th class="text-center" style="line-height: 0;">موجود</th>
+                <th class="text-center" style="line-height: 0;">اختلاف</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            
+                {% set sum_contract_ratios = 0 %}
+                {% set sum_available_ration = 0 %}
+                {% set sum_def = 0 %}
+                {% for ratio in empteachfeereport.ratios %}
+                    <tr style="margin-top:0;margin-bottom:0">
+                        <td class="text-center"  style="line-height: 0;">
+                             
+                                {{ ratio.course }}                                 
+                            
+                        </td>
+                        <td class="text-center" style="line-height: 0;">
+                             
+                                {{ ratio.gender }} 
+                                
+                            
+                        </td>
+                        <td class="text-center" style="line-height: 0;">
+                             
+                                {{ratio.contract_ratio}} 
+                                {% set sum_contract_ratios  = sum_contract_ratios+ratio.contract_ratio %}
+                            
+                        </td>
+                        <td class="text-center" style="line-height: 0;">
+                             
+                                {{ ratio.available_ration }}
+                                {% set sum_available_ration = sum_available_ration+ratio.available_ration %}
+                            
+                        </td>
+                        <td class="text-center" style="line-height: 0;">
+                             
+                                {{ ratio.available_ration-ratio.contract_ratio | round}}
+                                 
+                            
+                        </td>                
+                    <tr>
+                    {% endfor %}
+                
+            
+            <tr style="border:2px solid">
+                <td class="text-center" colspan="2" style="line-height: 0;">جمع</td>                 
+                <td class="text-center" style="line-height: 0;"> {{ sum_contract_ratios }}</td>
+                <td class="text-center" style="line-height: 0;"> {{ sum_available_ration }}</td>
+                <td class="text-center" style="line-height: 0;"> {{ sum_def }}</td>                
+            <tr>
+        </tbody>
+    </table>
+    <h4 class="text-center">صورت عملکرد   {{ empteachfeereport.emptypeName }} به ساعت  </h4>
+    <table class="table table-bordered" style="direction:rtl;font-size:12px;border:2px solid;width:80%;height:50%;margin-left:auto;margin-right:auto;">
+        <thead style="border:2px solid">
+            <tr style="border:1px solid">
+                <th class="text-center" rowspan="2" style="line-height: 0;">دوره</th>
+                <th class="text-center" rowspan="2" style="line-height: 0;">قرارداد در هفته </th>
+                <th class="text-center" rowspan="2" style="line-height: 0;">تعداد هفته</th>
+                <th class="text-center" colspan="2" style="line-height: 0;">عملکرد {{ empteachfeereport.emptypeName }}</th>                
+                <th class="text-center" rowspan="2" style="line-height: 0;">اختلاف با قرارداد</th>
+            </tr>
+            <tr style="border:1px solid">
+                <th class="text-center" style="line-height: 0;">در ماه</th>
+                <th class="text-center" style="line-height: 0;">در هفته</th>    
+            </tr>
+        </thead>
+        <tbody>
+                {% set sum_hours = 0 %}
+                {% set sum_number_of_weeks = 0 %}
+                {% set sum_hours_per_month = 0 %}
+                {% set sum_hours_per_week = 0 %}
+                {% set sum_dispute = 0 %}
+
+                {% for tableItem in empteachfeereport.tableItms %}
+                {% set sum_hours = sum_hours + tableItem.hours %}
+                {% set sum_number_of_weeks = tableItem.number_of_weeks %}
+                {% set sum_hours_per_month = sum_hours_per_month + tableItem.hours_per_month %}
+                {% set sum_hours_per_week = sum_hours_per_week + tableItem.hours_per_week %}
+                {% set sum_dispute = sum_dispute + tableItem.dispute %}
+                 <tr style="border:1px solid">
+                    <th class="text-center" style="line-height: 0;">{{ tableItem.course }}</th>
+                    <th class="text-center" style="line-height: 0;">{{ tableItem.hours }}</th>
+                    <th class="text-center" style="line-height: 0;">{{ tableItem.number_of_weeks }}</th>
+                    <th class="text-center" style="line-height: 0;">{{ tableItem.hours_per_month }}</th>
+                    <th class="text-center" style="line-height: 0;">{{ tableItem.hours_per_week }}</th>                
+                    <th class="text-center" style="line-height: 0;">{{ tableItem.dispute }}</th>
+                </tr> 
+                {% endfor %}
+                <tr style="border:2px solid">
+                    <th class="text-center" style="line-height: 0;">جمع</th>
+                    <th class="text-center" style="line-height: 0;">{{ sum_hours }}</th>
+                    <th class="text-center" style="line-height: 0;">{{ sum_number_of_weeks }}</th>
+                    <th class="text-center" style="line-height: 0;">{{ sum_hours_per_month }}</th>
+                    <th class="text-center" style="line-height: 0;">{{ sum_hours_per_week }}</th>                
+                    <th class="text-center" style="line-height: 0;">{{ sum_dispute }}</th>
+                </tr>
+        </tbody>
+    </table>
+</div>
+        <h5 style="margin-right:40px;margin-left:40px"><b>تذكر</b> :    *    مسئوليت رعايت ضوابط شيوه نامه صدور ابلاغ و ساماندهي بر عهده مديريت شهرستان / منطقه مي باشد .</h5>
+        <h5 style="margin-right:40px;margin-left:40px"><b>توضیحات </b> : {{ empteachfeereport.comment }}</h5>
+        <h5 style="margin-right:40px;margin-left:40px">ساعات اضافه كار شاغل  در مقاطع تحصيلي فوق به ميزان <b>{{ sum_hours_per_month }}</b> ساعت در    ماه <b>{{ empteachfeereport.month }}</b> (آزاد )   مربوط به شهرستان / منطقه  <b>{{ empteachfeereport.city }}</b>   مورد تاييد است .</h5>
+        <hr style="margin-top:50px">
+        <table class="table table-bordered" style="direction:rtl;font-size:12px;border:0;width:80%;height:50%;margin-left:auto;margin-right:auto;">
+            <tbody style="border:none">
+                <tr style="border:none">
+                {% for signature in empteachfeereport.signatures %}                    
+                        <td class="text-center" style="border:none">{{ signature.name }}</td>                                            
+                {% endfor %}
+                </tr>
+                <tr style="border:none">
+                {% for signature in empteachfeereport.signatures %}                    
+                        <td class="text-center" style="border:none">{{ signature.post_title }}</td>                                            
+                {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+</div>

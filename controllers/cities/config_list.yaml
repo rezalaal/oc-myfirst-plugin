@@ -1,0 +1,15 @@
+title: 'rezalaal.tb::lang.tables.cities.title'
+modelClass: Rezalaal\Tb\Models\Cities
+list: $/rezalaal/tb/models/cities/columns.yaml
+recordUrl: 'rezalaal/tb/cities/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: name
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

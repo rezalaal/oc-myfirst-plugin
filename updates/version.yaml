@@ -1,0 +1,110 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table rezalaal_tb_cities'
+    - builder_table_create_rezalaal_tb_cities.php
+1.0.3:
+    - 'Created table rezalaal_tb_months'
+    - builder_table_create_rezalaal_tb_months.php
+1.0.4:
+    - 'Created table rezalaal_tb_years'
+    - builder_table_create_rezalaal_tb_years.php
+1.0.5:
+    - 'Created table rezalaal_tb_courses'
+    - builder_table_create_rezalaal_tb_courses.php
+1.0.6:
+    - 'Created table rezalaal_tb_genders'
+    - builder_table_create_rezalaal_tb_genders.php
+1.0.7:
+    - 'Created table rezalaal_tb_st_ratios'
+    - builder_table_create_rezalaal_tb_st_ratios.php
+1.0.8:
+    - 'Updated table rezalaal_tb_months'
+    - builder_table_update_rezalaal_tb_months.php
+1.0.9:
+    - 'Updated table rezalaal_tb_st_ratios'
+    - builder_table_update_rezalaal_tb_st_ratios.php
+1.0.10:
+    - 'Created table rezalaal_tb_monthly_performances'
+    - builder_table_create_rezalaal_tb_monthly_performances.php
+1.0.11:
+    - 'Drop table rezalaal_tb_cities'
+    - builder_table_delete_rezalaal_tb_cities.php
+1.0.12:
+    - 'Created table rezalaal_tb_cities'
+    - builder_table_create_rezalaal_tb_cities_2.php
+1.0.13:
+    - 'Updated table rezalaal_tb_months'
+    - builder_table_update_rezalaal_tb_months_2.php
+1.0.14:
+    - 'Created table rezalaal_tb_emptypes'
+    - builder_table_create_rezalaal_tb_emptypes.php
+1.0.15:
+    - 'Created table rezalaal_tb_mpc'
+    - builder_table_create_rezalaal_tb_mpc.php
+1.0.16:
+    - 'Created table rezalaal_tb_mpcor'
+    - builder_table_create_rezalaal_tb_mpcor.php
+1.0.17:
+    - 'Created table rezalaal_tb_mpe'
+    - builder_table_create_rezalaal_tb_mpe.php
+1.0.18:
+    - 'Drop table rezalaal_tb_mpc'
+    - builder_table_delete_rezalaal_tb_mpc.php
+1.0.19:
+    - 'Drop table rezalaal_tb_mpcor'
+    - builder_table_delete_rezalaal_tb_mpcor.php
+1.0.20:
+    - 'Drop table rezalaal_tb_mpe'
+    - builder_table_delete_rezalaal_tb_mpe.php
+1.0.21:
+    - 'Updated table rezalaal_tb_monthly_performances'
+    - builder_table_update_rezalaal_tb_monthly_performances.php
+1.0.22:
+    - 'Updated table rezalaal_tb_monthly_performances'
+    - builder_table_update_rezalaal_tb_monthly_performances_2.php
+1.0.23:
+    - 'Updated table rezalaal_tb_st_ratios'
+    - builder_table_update_rezalaal_tb_st_ratios_2.php
+1.0.24:
+    - 'Updated table rezalaal_tb_st_ratios'
+    - builder_table_update_rezalaal_tb_st_ratios_3.php
+1.0.25:
+    - 'Updated table rezalaal_tb_monthly_performances'
+    - builder_table_update_rezalaal_tb_monthly_performances_3.php
+1.0.26:
+    - 'Updated table rezalaal_tb_st_ratios'
+    - builder_table_update_rezalaal_tb_st_ratios_4.php
+1.0.27:
+    - 'Updated table rezalaal_tb_st_ratios'
+    - builder_table_update_rezalaal_tb_st_ratios_5.php
+1.0.28:
+    - 'Updated table rezalaal_tb_st_ratios'
+    - builder_table_update_rezalaal_tb_st_ratios_6.php
+1.0.29:
+    - 'Updated table rezalaal_tb_st_ratios'
+    - builder_table_update_rezalaal_tb_st_ratios_7.php
+1.0.30:
+    - 'Seed data tables'
+    - seed_all_tables.php
+1.0.31:
+    - 'Created table rezalaal_tb_weekly_contract'
+    - builder_table_create_rezalaal_tb_weekly_contract.php
+1.0.32:
+    - 'Updated table rezalaal_tb_weekly_contract'
+    - builder_table_update_rezalaal_tb_weekly_contract.php
+1.0.33:
+    - 'Created table rezalaal_tb_signatures'
+    - builder_table_create_rezalaal_tb_signatures.php
+1.0.34:
+    - 'Created table rezalaal_tb_wcc'
+    - builder_table_create_rezalaal_tb_wcc.php
+1.0.35:
+    - 'Updated table rezalaal_tb_wcc'
+    - builder_table_update_rezalaal_tb_wcc.php
+1.0.36:
+    - 'Drop table rezalaal_tb_wcc'
+    - builder_table_delete_rezalaal_tb_wcc.php
+1.0.37:
+    - 'Updated table rezalaal_tb_weekly_contract'
+    - builder_table_update_rezalaal_tb_weekly_contract_2.php

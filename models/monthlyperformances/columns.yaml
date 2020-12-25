@@ -1,0 +1,36 @@
+columns:
+    year:
+        label: 'rezalaal.tb::lang.tables.years.name'
+        type: text
+        searchable: true
+        select: name
+        relation: years
+    city:
+        label: 'rezalaal.tb::lang.tables.cities.title'
+        type: text
+        searchable: true
+        select: 'concat(name, '' '', code)'
+        relation: cities
+    course:
+        label: 'rezalaal.tb::lang.tables.courses.title'
+        type: text
+        searchable: true
+        select: name
+        relation: courses
+    emptype:
+        label: 'rezalaal.tb::lang.tables.emptypes.title'
+        type: text
+        searchable: true
+        select: type
+        relation: emptypes
+    month:
+        label: 'rezalaal.tb::lang.tables.months.title'
+        type: text
+        searchable: true
+        select: name
+        relation: months
+    hours:
+        label: 'rezalaal.tb::lang.tables.monthly_performances.hours'
+        type: number
+        searchable: true
+    

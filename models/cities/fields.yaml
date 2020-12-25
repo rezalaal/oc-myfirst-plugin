@@ -1,0 +1,13 @@
+fields:
+    code:
+        label: 'rezalaal.tb::lang.tables.cities.code'
+        span: auto
+        placeholder: 'rezalaal.tb::lang.tables.cities.code_placeholder'
+        required: 1
+        type: text
+    name:
+        label: 'rezalaal.tb::lang.tables.cities.name'
+        span: auto
+        placeholder: 'rezalaal.tb::lang.tables.cities.name_placeholder'
+        required: 1
+        type: text

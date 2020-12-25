@@ -1,0 +1,7 @@
+fields:
+    name:
+        label: 'rezalaal.tb::lang.tables.years.name'
+        span: left
+        placeholder: 'rezalaal.tb::lang.tables.years.name_placeholder'
+        required: 1
+        type: text

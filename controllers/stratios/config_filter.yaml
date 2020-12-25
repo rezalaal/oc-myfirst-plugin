@@ -1,0 +1,21 @@
+scopes:
+  cities:
+    label: 'rezalaal.tb::lang.tables.cities.title'
+    modelClass: Rezalaal\TB\Models\Cities
+    conditions: cities_id = :filtered
+    nameFrom: name
+  years:
+    label: 'rezalaal.tb::lang.tables.years.title'
+    modelClass: Rezalaal\TB\Models\Years
+    conditions: years_id = :filtered
+    nameFrom: name
+  courses:
+    label: 'rezalaal.tb::lang.tables.courses.title'
+    modelClass: Rezalaal\TB\Models\Courses
+    conditions: courses_id = :filtered
+    nameFrom: name
+  genders:
+    label: 'rezalaal.tb::lang.tables.genders.title'
+    modelClass: Rezalaal\TB\Models\Genders
+    conditions: genders_id = :filtered
+    nameFrom: name

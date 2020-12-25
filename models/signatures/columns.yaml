@@ -1,0 +1,9 @@
+columns:
+    name:
+        label: 'rezalaal.tb::lang.tables.signatures.name_placeholder'
+        type: text
+        searchable: true
+    post_title:
+        label: 'rezalaal.tb::lang.tables.signatures.post_title'
+        type: text
+        searchable: true

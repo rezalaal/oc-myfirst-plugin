@@ -1,0 +1,13 @@
+columns:
+    name:
+        label: 'rezalaal.tb::lang.tables.months.name'
+        type: text
+        searchable: true
+    number_of_months:
+        label: 'rezalaal.tb::lang.tables.months.number_of_month'
+        type: number
+        searchable: true
+    number_of_weeks:
+        label: 'rezalaal.tb::lang.tables.months.number_of_weeks'
+        type: number
+        searchable: true

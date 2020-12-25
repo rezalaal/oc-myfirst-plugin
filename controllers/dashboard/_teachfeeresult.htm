@@ -1,0 +1,86 @@
+  <a 
+    href="#"
+    class="btn btn-primary btn-lg"
+    onClick="printChart('/report/<?php echo($cityId) ?>/<?php echo($yearId) ?>/<?php echo($monthId) ?>/<?php echo($comment) ?>/<?php echo($emptype) ?>')"
+  >
+  چاپ گزارش 
+  </a> 
+<div id='printarea'>
+<h1 class="text-center">صورت عملکرد کلاس، دانش آموز و تراکم به نفر (دولتی) </h1>
+<h2 class="text-center">(ماه <?php   echo($month) ?> (<?php echo($emptypeName) ?> :: <?php echo($city) ?></h2>
+<h3 class="text-center">سال تحصیلی: <?php echo($year) ?></h3>
+<div class="container">
+    <table class="table table-bordered" style="direction:rtl">
+        <thead>
+            <tr>
+                <th class="text-center" rowspan="2" colspan="2">دوره</th>
+                <th class="text-center" colspan="3">نسبت دانش آموز به گروه معلم</th>                 
+            </tr>
+            <tr>                 
+                <th class="text-center">قرارداد</th>
+                <th class="text-center">موجود</th>
+                <th class="text-center">اختلاف</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <?php                           
+                foreach($stratios as $stratio) {
+                    ?>
+                    <tr>
+                        <td class="text-center"><?php echo($stratio->courses->name); ?></td>
+                        <td class="text-center"><?php echo($stratio->genders->name); ?></td>
+                        <td class="text-center"><?php echo($stratio->contract_ratio); ?></td>
+                        <td class="text-center"><?php echo($stratio->available_ration) ;?></td>
+                        <td class="text-center"><?php echo(round(($stratio->available_ration-$stratio->contract_ratio),2)) ;?></td>                
+                    <tr>
+            <?php
+                }
+            ?>            
+        </body>
+    </table>
+</div>
+    <h1 class="text-center">صورت عملکرد <?php echo($emptypeName) ?> به ساعت  </h1>
+    <table class="table table-bordered" style="direction:rtl">
+        <thead>
+            <tr>
+                <th class="text-center" rowspan="2">دوره</th>
+                <th class="text-center" rowspan="2">قرارداد در هفته </th>
+                <th class="text-center" rowspan="2">تعداد هفته</th>
+                <th class="text-center" colspan="2">عملکرد حق التدریس <?php echo($emptypeName) ?></th>                
+                <th class="text-center" rowspan="2" >اختلاف با قرارداد</th>
+            </tr>
+            <tr>
+                <th class="text-center">در ماه</th>
+                <th class="text-center">در هفته</th>    
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+               
+                foreach($tableItms as $tableItem){
+            ?>
+                 <tr>
+                    <th class="text-center"><?php echo $tableItem->course;?></th>
+                    <th class="text-center"><?php echo $tableItem->hours; ?></th>
+                    <th class="text-center"><?php echo $tableItem->number_of_weeks;?></th>
+                    <th class="text-center"><?php echo $tableItem->hours_per_month;?></th>
+                    <th class="text-center"><?php echo $tableItem->hours_per_week;?></th>                
+                    <th class="text-center"><?php echo $tableItem->dispute;?></th>
+                </tr> 
+            <?php  
+                }
+            ?>
+        </tbody>
+    </table>
+</div>
+<script>
+        
+    function printChart(url){
+
+        var W = window.open(url);
+        W.window.print();  
+        newWin.document.close();
+        setTimeout(function(){newWin.close();},10);
+    }
+</script>

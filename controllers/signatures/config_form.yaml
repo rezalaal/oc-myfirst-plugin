@@ -1,0 +1,14 @@
+name: Signatures
+modelClass: Rezalaal\Tb\Models\Signatures
+form: $/rezalaal/tb/models/signatures/fields.yaml
+defaultRedirect: rezalaal/tb/signatures
+create:
+    title: 'rezalaal.tb::lang.tables.signatures.title'
+    redirect: 'rezalaal/tb/signatures/update/:id'
+    redirectClose: rezalaal/tb/signatures
+update:
+    title: 'rezalaal.tb::lang.tables.signatures.title'
+    redirect: rezalaal/tb/signatures
+    redirectClose: rezalaal/tb/signatures
+preview:
+    title: 'rezalaal.tb::lang.tables.signatures.title'

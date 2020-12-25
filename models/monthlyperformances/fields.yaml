@@ -1,0 +1,42 @@
+fields:
+    cities:
+        label: 'rezalaal.tb::lang.tables.cities.title'
+        nameFrom: name
+        descriptionFrom: 'rezalaal.tb::lang.tables.cities.title'
+        span: auto
+        required: 1
+        type: relation
+    years:
+        label: 'rezalaal.tb::lang.tables.years.title'
+        nameFrom: name
+        descriptionFrom: 'rezalaal.tb::lang.tables.years.title'
+        span: auto
+        required: 1
+        type: relation
+    courses:
+        label: 'rezalaal.tb::lang.tables.courses.title'
+        nameFrom: name
+        descriptionFrom: 'rezalaal.tb::lang.tables.courses.name'
+        span: auto
+        required: 1
+        type: relation
+    emptypes:
+        label: 'rezalaal.tb::lang.tables.emptypes.type'
+        nameFrom: type
+        descriptionFrom: 'rezalaal.tb::lang.tables.emptypes.type'
+        span: auto
+        required: 1
+        type: relation
+    months:
+        label: 'rezalaal.tb::lang.tables.months.name'
+        nameFrom: name
+        descriptionFrom: 'rezalaal.tb::lang.tables.months.title'
+        span: auto
+        required: 1
+        type: relation
+    hours:
+        label: 'rezalaal.tb::lang.tables.monthly_performances.hours'
+        span: right
+        placeholder: 'rezalaal.tb::lang.tables.monthly_performances.hours_placeholder'
+        required: 1
+        type: number

@@ -1,0 +1,29 @@
+name = "Default PDF layout"
+==
+ <style>
+            @font-face {
+            font-family: 'Gandom-FD';
+            src: url('/hosts/october/storage/fonts/Gandom-FD.eot?#') format('eot'),
+            url('/hosts/october/storage/fonts/Gandom-FD.ttf') format('truetype'),
+            url('/hosts/october/storage/fonts/Gandom-FD.woff') format('woff');
+            }
+             * {
+            font-family: Gandom-FD,'Gandom-FD',tahoma
+            }
+        </style>
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Document</title>
+        
+        <style type="text/css" media="screen">
+            {{ css|raw }}
+        </style>
+        
+    </head>
+    <body>
+        {{ content_html|raw }}
+    </body>
+</html>

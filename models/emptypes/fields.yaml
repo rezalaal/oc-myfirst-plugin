@@ -1,0 +1,7 @@
+fields:
+    type:
+        label: 'rezalaal.tb::lang.tables.emptypes.type'
+        span: auto
+        placeholder: 'rezalaal.tb::lang.tables.emptypes.type_placeholder'
+        required: 1
+        type: text

@@ -1,0 +1,14 @@
+name: 'rezalaal.tb::lang.tables.stratios.title'
+modelClass: Rezalaal\Tb\Models\STRatios
+form: $/rezalaal/tb/models/stratios/fields.yaml
+defaultRedirect: rezalaal/tb/stratios
+create:
+    title: 'backend::lang.form.create'
+    redirect: 'rezalaal/tb/stratios/update/:id'
+    redirectClose: rezalaal/tb/stratios
+update:
+    title: 'backend::lang.relation.update'
+    redirect: rezalaal/tb/stratios
+    redirectClose: rezalaal/tb/stratios
+preview:
+    title: 'backend::lang.form.preview'

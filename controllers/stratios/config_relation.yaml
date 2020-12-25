@@ -1,0 +1,41 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+city:
+    label: 'rezalaal.tb::lang.tables.cities.title'
+    view:
+        form: $/rezalaal/tb/models/cities/fields.yaml
+        toolbarButtons: link|unlink
+    manage:
+        form: $/rezalaal/tb/models/cities/fields.yaml
+        list: $/rezalaal/tb/models/cities/columns.yaml
+        
+course:
+    label: 'rezalaal.tb::lang.tables.courses.title'
+    view:
+        form: $/rezalaal/tb/models/courses/fields.yaml
+        toolbarButtons: link|unlink
+    manage:
+        form: $/rezalaal/tb/models/courses/fields.yaml
+        list: $/rezalaal/tb/models/courses/columns.yaml
+
+gender:
+    label: 'rezalaal.tb::lang.tables.genders.title'
+    view:
+        form: $/rezalaal/tb/models/genders/fields.yaml
+        toolbarButtons: link|unlink
+    manage:
+        form: $/rezalaal/tb/models/genders/fields.yaml
+        list: $/rezalaal/tb/models/genders/columns.yaml   
+    manage:
+        form: $/rezalaal/tb/models/months/fields.yaml
+        list: $/rezalaal/tb/models/months/columns.yaml   
+year:
+    label: 'rezalaal.tb::lang.tables.years.title'
+    view:
+        form: $/rezalaal/tb/models/years/fields.yaml
+        toolbarButtons: link|unlink
+    manage:
+        form: $/rezalaal/tb/models/years/fields.yaml
+        list: $/rezalaal/tb/models/years/columns.yaml             

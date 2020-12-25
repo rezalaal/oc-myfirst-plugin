@@ -1,0 +1,15 @@
+title: 'rezalaal.tb::lang.tables.months.title'
+modelClass: Rezalaal\Tb\Models\Months
+list: $/rezalaal/tb/models/months/columns.yaml
+recordUrl: 'rezalaal/tb/months/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+defaultSort: 
+    column: 'number_of_months'
+    direction: 'desc'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

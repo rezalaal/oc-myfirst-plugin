@@ -1,0 +1,9 @@
+columns:
+    code:
+        label: 'rezalaal.tb::lang.tables.cities.code'
+        type: text
+        searchable: true
+    name:
+        label: 'rezalaal.tb::lang.tables.cities.name'
+        type: text
+        searchable: true

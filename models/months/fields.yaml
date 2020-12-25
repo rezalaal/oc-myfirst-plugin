@@ -1,0 +1,20 @@
+fields:
+    name:
+        label: 'rezalaal.tb::lang.tables.months.name'
+        span: auto
+        placeholder: 'rezalaal.tb::lang.tables.months.name_placeholder'
+        required: 1
+        type: text
+    number_of_months:
+        label: 'rezalaal.tb::lang.tables.months.number_of_month'
+        span: auto
+        placeholder: 'rezalaal.tb::lang.tables.months.number_of_month'
+        hidden: 0
+        required: 1
+        type: number
+    number_of_weeks:
+        label: 'rezalaal.tb::lang.tables.months.number_of_weeks'
+        span: auto
+        placeholder: 'rezalaal.tb::lang.tables.months.number_of_weeks'
+        required: 1
+        type: number

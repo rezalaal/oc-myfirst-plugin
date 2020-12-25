@@ -1,0 +1,146 @@
+plugin:
+    name: 'rezalaal.tb::lang.plugin.name'
+    description: 'rezalaal.tb::lang.plugin.description'
+    author: Rezalaal
+    icon: oc-icon-adjust
+    homepage: 'http://github.com/rezalaal'
+permissions:
+    rezalaal.tb.tb_top_menu:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.plugin.topmenu'
+    rezalaal.tb.tb_cities:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.tables.cities.title'
+    rezalaal.tb.tb_courses:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.tables.courses.title'
+    rezalaal.tb.tb_genders:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.tables.genders.title'
+    rezalaal.tb.tb_monthly_performances:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.tables.monthly_performances.title'
+    rezalaal.tb.tb_months:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.tables.months.title'
+    rezalaal.tb.tb_st_ratios:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.tables.stratios.title'
+    rezalaal.tb.tb_emptype:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.tables.emptypes.title'
+    rezalaal.tb.tb_dashboard:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.dashboard.title'
+    rezalaal.tb.tb_years:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.tables.years.title'
+    rezalaal.tb.tb_weekly_hours:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.tables.weekly_contracts.title'
+    rezalaal.tb.tb_signatures:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.tables.signatures.title'
+    rezalaal.tb.tb_empteachfeereport:
+        tab: 'rezalaal.tb::lang.plugin.name'
+        label: 'rezalaal.tb::lang.report.empteach.freeandemp'
+navigation:
+    tb:
+        label: 'rezalaal.tb::lang.plugin.name'
+        url: rezalaal/tb/dashboard
+        icon: icon-pie-chart
+        permissions:
+            - tb_top_menu
+        sideMenu:
+            dashboard:
+                label: 'rezalaal.tb::lang.dashboard.title'
+                url: rezalaal/tb/dashboard
+                icon: icon-sun-o
+                permissions:
+                    - tb_dashboard
+                group: main
+                description: main
+            monthly-performance:
+                label: 'rezalaal.tb::lang.tables.monthly_performances.title'
+                url: rezalaal/tb/monthlyperformances
+                icon: icon-sellsy
+                permissions:
+                    - tb_monthly_performances
+                group: main
+                description: main
+            empteachfeereport:
+                label: 'rezalaal.tb::lang.report.empteach.freeandemp'
+                url: rezalaal/tb/dashboard/empteachfeereport
+                icon: icon-bar-chart
+                permissions:
+                    - rezalaal.tb.tb_empteachfeereport
+            settings:
+                label: 'rezalaal.tb::lang.settings.title'
+                url: rezalaal/tb/dashboard/settings
+                icon: icon-database
+                permissions:
+                    - rezalaal.tb.tb_dashboard
+            st_ratio:
+                label: 'rezalaal.tb::lang.tables.stratios.title'
+                url: rezalaal/tb/stratios
+                icon: icon-newspaper-o
+                permissions:
+                    - tb_st_ratios
+            weeklycontract:
+                label: 'rezalaal.tb::lang.tables.weekly_contracts.title'
+                url: rezalaal/tb/weeklycontract
+                icon: icon-pencil-square-o
+                permissions:
+                    - rezalaal.tb.tb_weekly_hours
+            cities:
+                label: 'rezalaal.tb::lang.tables.cities.title'
+                url: rezalaal/tb/cities
+                icon: icon-bank
+                permissions:
+                    - tb_cities
+                group: settings
+                description: settings
+            courses:
+                label: 'دوره تحصیلی'
+                url: rezalaal/tb/courses
+                icon: icon-building-o
+                permissions:
+                    - tb_courses
+                group: settings
+                description: settings
+            genders:
+                label: 'rezalaal.tb::lang.tables.genders.title'
+                url: /
+                icon: icon-venus-double
+                permissions:
+                    - tb_genders
+                group: settings
+                description: settings
+            months:
+                label: 'rezalaal.tb::lang.tables.months.title'
+                url: rezalaal/tb/months
+                icon: icon-moon-o
+                permissions:
+                    - tb_months
+                group: settings
+                description: settings
+            years:
+                label: 'rezalaal.tb::lang.tables.years.title'
+                url: rezalaal/tb/years
+                icon: icon-adjust
+                permissions:
+                    - rezalaal.tb.tb_years
+                group: settings
+                description: settings
+            emptypes:
+                label: 'rezalaal.tb::lang.tables.emptypes.title'
+                url: rezalaal/tb/emptypes
+                icon: icon-pencil-square-o
+                permissions:
+                    - tb_emptype
+                group: settings
+                description: settings
+            signatures:
+                label: 'rezalaal.tb::lang.tables.signatures.title'
+                url: rezalaal/tb/signatures
+                icon: icon-forumbee

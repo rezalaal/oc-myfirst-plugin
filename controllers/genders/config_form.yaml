@@ -1,0 +1,14 @@
+name: 'rezalaal.tb::lang.tables.genders.title'
+modelClass: Rezalaal\Tb\Models\Genders
+form: $/rezalaal/tb/models/genders/fields.yaml
+defaultRedirect: rezalaal/tb/genders
+create:
+    title: 'backend::lang.form.create'
+    redirect: 'rezalaal/tb/genders/update/:id'
+    redirectClose: rezalaal/tb/genders
+update:
+    title: 'backend::lang.relation.update'
+    redirect: rezalaal/tb/genders
+    redirectClose: rezalaal/tb/genders
+preview:
+    title: 'backend::lang.form.preview'

@@ -1,0 +1,5 @@
+columns:
+    name:
+        label: 'rezalaal.tb::lang.tables.years.name'
+        type: text
+        searchable: true

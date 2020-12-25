@@ -1,0 +1,14 @@
+name: 'rezalaal.tb::lang.tables.monthly_performances.title'
+modelClass: Rezalaal\Tb\Models\MonthlyPerformances
+form: $/rezalaal/tb/models/monthlyperformances/fields.yaml
+defaultRedirect: rezalaal/tb/monthlyperformances
+create:
+    title: 'backend::lang.form.create'
+    redirect: 'rezalaal/tb/monthlyperformances'
+    redirectClose: rezalaal/tb/monthlyperformances
+update:
+    title: 'backend::lang.relation.update'
+    redirect: rezalaal/tb/monthlyperformances
+    redirectClose: rezalaal/tb/monthlyperformances
+preview:
+    title: 'backend::lang.form.preview'

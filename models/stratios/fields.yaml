@@ -1,0 +1,40 @@
+fields:
+    cities:
+        label: 'rezalaal.tb::lang.tables.cities.title'
+        nameFrom: name
+        descriptionFrom: 'rezalaal.tb::lang.tables.cities.title'
+        span: auto
+        required: 1
+        type: relation
+    years:
+        label: 'rezalaal.tb::lang.tables.years.title'
+        nameFrom: name
+        descriptionFrom: 'rezalaal.tb::lang.tables.years.title'
+        span: auto
+        type: relation
+    courses:
+        label: 'rezalaal.tb::lang.tables.courses.title'
+        nameFrom: name
+        descriptionFrom: 'rezalaal.tb::lang.tables.courses.title'
+        span: auto
+        required: 1
+        type: relation
+    genders:
+        label: 'rezalaal.tb::lang.tables.genders.title'
+        nameFrom: name
+        descriptionFrom: 'rezalaal.tb::lang.tables.genders.title'
+        span: right
+        required: 1
+        type: relation
+    contract_ratio:
+        label: 'rezalaal.tb::lang.tables.stratios.contract_ratio'
+        span: left
+        placeholder: 'rezalaal.tb::lang.tables.stratios.contract_ratio_placeholder'
+        required: 1
+        type: number
+    available_ration:
+        label: 'rezalaal.tb::lang.tables.stratios.available_ratio'
+        span: right
+        placeholder: 'rezalaal.tb::lang.tables.stratios.available_ratio_placeholder'
+        required: 1
+        type: number

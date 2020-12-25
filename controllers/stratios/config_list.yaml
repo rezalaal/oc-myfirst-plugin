@@ -1,0 +1,13 @@
+title: 'rezalaal.tb::lang.tables.stratios.title'
+modelClass: Rezalaal\Tb\Models\STRatios
+list: $/rezalaal/tb/models/stratios/columns.yaml
+recordUrl: 'rezalaal/tb/stratios/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+filter: config_filter.yaml
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

@@ -1,0 +1,30 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+city:
+    label: 'rezalaal.tb::lang.tables.cities.title'
+    view:
+        form: $/rezalaal/tb/models/cities/fields.yaml
+        toolbarButtons: link|unlink
+    manage:
+        form: $/rezalaal/tb/models/cities/fields.yaml
+        list: $/rezalaal/tb/models/cities/columns.yaml
+        
+course:
+    label: 'rezalaal.tb::lang.tables.courses.title'
+    view:
+        form: $/rezalaal/tb/models/courses/fields.yaml
+        toolbarButtons: link|unlink
+    manage:
+        form: $/rezalaal/tb/models/courses/fields.yaml
+        list: $/rezalaal/tb/models/courses/columns.yaml
+   
+year:
+    label: 'rezalaal.tb::lang.tables.years.title'
+    view:
+        form: $/rezalaal/tb/models/years/fields.yaml
+        toolbarButtons: link|unlink
+    manage:
+        form: $/rezalaal/tb/models/years/fields.yaml
+        list: $/rezalaal/tb/models/years/columns.yaml             

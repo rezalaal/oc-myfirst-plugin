@@ -1,0 +1,14 @@
+name: 'rezalaal.tb::lang.tables.years.title'
+modelClass: Rezalaal\Tb\Models\Years
+form: $/rezalaal/tb/models/years/fields.yaml
+defaultRedirect: rezalaal/tb/years
+create:
+    title: 'backend::lang.form.create'
+    redirect: 'rezalaal/tb/years/update/:id'
+    redirectClose: rezalaal/tb/years
+update:
+    title: 'backend::lang.relation.update'
+    redirect: rezalaal/tb/years
+    redirectClose: rezalaal/tb/years
+preview:
+    title: 'backend::lang.form.preview'

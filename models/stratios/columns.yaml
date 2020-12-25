@@ -1,0 +1,33 @@
+columns:
+    year:
+        label: 'rezalaal.tb::lang.tables.years.title'
+        type: text
+        searchable: true
+        select: name
+        relation: years
+    city:
+        label: 'rezalaal.tb::lang.tables.cities.title'
+        type: text
+        searchable: true
+        select: 'concat(name, '' '', code)'
+        relation: cities
+    contract_ratio:
+        label: 'rezalaal.tb::lang.tables.stratios.contract_ratio'
+        type: text
+        searchable: true
+    available_ration:
+        label: 'rezalaal.tb::lang.tables.stratios.available_ratio'
+        type: text
+        searchable: true
+    course:
+        label: 'rezalaal.tb::lang.tables.courses.name'
+        type: text
+        searchable: true
+        select: name
+        relation: courses
+    gender:
+        label: 'rezalaal.tb::lang.tables.genders.name'
+        type: text
+        searchable: true
+        select: name
+        relation: genders

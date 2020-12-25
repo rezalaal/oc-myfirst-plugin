@@ -1,0 +1,5 @@
+columns:
+    name:
+        label: 'rezalaal.tb::lang.tables.courses.title'
+        type: text
+        searchable: true
